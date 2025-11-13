@@ -1,17 +1,28 @@
-﻿# Java / Maven / Gradle
-*.class
-*.jar
-*.war
-*.ear
+﻿@"
+# IntelliJ / JetBrains
+.idea/
+*.iml
+
+# Java build outputs
 target/
 build/
 out/
+.gradle/
+.classpath
+.project
+.settings/
 
-# IDE
-.idea/
+# Maven/Gradle
+.mvn/wrapper/maven-wrapper.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Logs
+*.log
+
+# IDEs
 .vscode/
-*.iml
 
-# OS
+# OS junk
 .DS_Store
 Thumbs.db
+"@ | Set-Content -Encoding UTF8 .gitignore
